@@ -1,0 +1,44 @@
+.library-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.library-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #999;
+}
+
+/* Theme-specific adjustments */
+.library-container.theme-darkAcademia {
+  --primary-text: #e8e8e8;
+  --secondary-text: #a0a0a0;
+}
+
+.library-container.theme-lightAcademia {
+  --primary-text: #2c2c2c;
+  --secondary-text: #666666;
+}
+
+.library-container.theme-romanticAcademia {
+  --primary-text: #5a4a42;
+  --secondary-text: #8b7b73;
+}
+
+.library-container.theme-chaosAcademia {
+  --primary-text: #333333;
+  --secondary-text: #666666;
+}
